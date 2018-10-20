@@ -238,10 +238,14 @@ HOSTOS := $(shell uname -s | tr '[:upper:]' '[:lower:]' | \
 export	HOSTARCH HOSTOS
 
 #########################################################################
+# set by <lumingliang.github@gmail.com>
+# set default platform and cross_tools
+ARCH := arm
+CROSS_COMPILE := /home/lumingliang/work/u-boot-2018.09/toolschain/arm-linux-gnueabi/bin/arm-linux-gnueabi-
 
 # set default to nothing for native builds
 ifeq ($(HOSTARCH),$(ARCH))
-CROSS_COMPILE ?=
+CROSS_COMPILE ?= 
 endif
 
 KCONFIG_CONFIG	?= .config
