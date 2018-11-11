@@ -1352,7 +1352,7 @@ config ARCH_ASPEED
 
 config TARGET_TINY6410
 	bool "Support Tiny6410 Socs"
-
+	select CPU_ARM1176
 
 endchoice
 
