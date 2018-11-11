@@ -1511,7 +1511,7 @@ source "board/xilinx/Kconfig"
 source "board/xilinx/zynq/Kconfig"
 source "board/xilinx/zynqmp/Kconfig"
 source "board/zipitz2/Kconfig"
-source "board/tiny6410/Kconfig"
+source "board/samsumg/tiny6410/Kconfig"
 
 source "arch/arm/Kconfig.debug"
 
