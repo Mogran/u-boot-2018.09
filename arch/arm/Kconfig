@@ -1350,6 +1350,10 @@ config ARCH_ASPEED
 	select OF_CONTROL
 	imply CMD_DM
 
+config TARGET_TINY6410
+	bool "Support Tiny6410 Socs"
+
+
 endchoice
 
 config TI_SECURE_DEVICE
@@ -1507,6 +1511,7 @@ source "board/xilinx/Kconfig"
 source "board/xilinx/zynq/Kconfig"
 source "board/xilinx/zynqmp/Kconfig"
 source "board/zipitz2/Kconfig"
+source "board/tiny6410/Kconfig"
 
 source "arch/arm/Kconfig.debug"
 
