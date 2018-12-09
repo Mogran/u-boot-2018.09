@@ -1,0 +1,23 @@
+if ARCH_S3C64XX
+
+choice
+	prompt "Choice your board lml6410 or tiny6410"
+	optional
+
+config TARGET_LML6410
+	bool "Support lml 6410 board"	
+	select OF_CONTROL
+
+config TARGET_TINY6410
+	bool "Support Tiny 6410 board"	
+	select OF_CONTROL
+
+endchoice
+
+config SYS_TEXT_BASE
+	default 0x30008000
+
+
+source "board/samsung/lml6410/Kconfig"
+
+endif

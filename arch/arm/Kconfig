@@ -1376,7 +1376,7 @@ source "arch/arm/mach-bcmstb/Kconfig"
 
 source "arch/arm/mach-davinci/Kconfig"
 
-source "arch/arm/mach-lmlxxxx/Kconfig"
+source "arch/arm/mach-s3c64xx/Kconfig"
 
 source "arch/arm/mach-exynos/Kconfig"
 
