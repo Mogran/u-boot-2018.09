@@ -399,7 +399,7 @@ config ARM64_SUPPORT_AARCH32
 
 choice
 	prompt "Target select"
-	default TARGET_HIKEY
+	default ARCH_S3C64XX
 
 config ARCH_AT91
 	bool "Atmel AT91"
@@ -1350,8 +1350,8 @@ config ARCH_ASPEED
 	select OF_CONTROL
 	imply CMD_DM
 
-config TARGET_TINY6410
-	bool "Support Tiny6410 Socs"
+config ARCH_S3C64XX
+	bool "Support samsung s3c64xx Socs"
 	select CPU_ARM1176
 
 endchoice
@@ -1375,6 +1375,8 @@ source "arch/arm/mach-bcm283x/Kconfig"
 source "arch/arm/mach-bcmstb/Kconfig"
 
 source "arch/arm/mach-davinci/Kconfig"
+
+source "arch/arm/mach-lmlxxxx/Kconfig"
 
 source "arch/arm/mach-exynos/Kconfig"
 
@@ -1511,7 +1513,6 @@ source "board/xilinx/Kconfig"
 source "board/xilinx/zynq/Kconfig"
 source "board/xilinx/zynqmp/Kconfig"
 source "board/zipitz2/Kconfig"
-source "board/samsung/tiny6410/Kconfig"
 
 source "arch/arm/Kconfig.debug"
 
