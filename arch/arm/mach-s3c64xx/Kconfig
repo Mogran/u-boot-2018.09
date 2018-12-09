@@ -5,11 +5,7 @@ choice
 	optional
 
 config TARGET_LML6410
-	bool "Support lml 6410 board"	
-	select OF_CONTROL
-
-config TARGET_TINY6410
-	bool "Support Tiny 6410 board"	
+	bool "Support lml 6410 board"
 	select OF_CONTROL
 
 endchoice

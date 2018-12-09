@@ -9,6 +9,7 @@
 
 #include <common.h>
 
+#if 0
 #ifndef CONFIG_SYS_DCACHE_OFF
 void enable_caches(void)
 {
@@ -44,3 +45,5 @@ void v7_outer_cache_disable(void)
 	);
 }
 #endif
+#endif //endof whole files
+

@@ -1353,6 +1353,8 @@ config ARCH_ASPEED
 config ARCH_S3C64XX
 	bool "Support samsung s3c64xx Socs"
 	select CPU_ARM1176
+	select DM
+	select DM_SERIAL
 
 endchoice
 

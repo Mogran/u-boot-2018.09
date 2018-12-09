@@ -1,0 +1,20 @@
+/*
+ *	@author <lumingliang@hjimi.com>
+ **/
+
+porting flow chart as follow,
+
+arch->target(board)->specific files ...
+
+DM : names Driver Model (looks like linux kernel Driver Model)
+
+1.add new board during arch/arm/Kconfig ,key words is ARCH_XXXX
+2.then,create new file during arch/arm/mach-XXXX, (xxxx,must be as same as arch/arm/Kconfig's ARCH_XXXX)
+	if you defined as CONFIG_SYS_SOC = "s3c64xx", then you must create arch/arm/mach-s3c64xx dir,
+	because U-BOOT tools script will check SYS_SOC and match mach-SYS_SOC dirs to decide arch/arm/include/asm/arch's soft links.
+3.then,create new macro during arch/arm/Kconfig, named as TARGET_YYYY
+4.then create new board/YYYY/*(included,Kconfig, YYYY.c. Makefile)
+
+
+
+
